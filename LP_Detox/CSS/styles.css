@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #545454;
+}
+
+header {
+    font-size: 120%;
+}
+
+section {
+    padding-inline: 3%;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 800px;
+    padding: 1.2rem;
+    margin: 0 auto;
+    color: white;
+    background: #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    overflow: visible;
+}
+
+.images {
+    display: flex;
+    gap: 5%;
+}
+
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    font-size: clamp(10px, 2.5vw, 18px); /* dynamically scales the text size */
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.detox-overlay, .extreme-overlay {
+    text-align: center;
+    color: #2B5C27;
+    font-weight: bold;
+    font-size: 1.5em; /* inherits responsive size from parent */
+    position: absolute;
+    bottom: 13%;
+    left: 15%; /* center horizontally */
+    transform: translateX(-15%); /* accurately center the text horizontally */
+    white-space: nowrap; /* prevent breaking into multiple lines */
+}
+
+.extreme-overlay {
+    left: 65%;
+    color: #00005C;
+}
+
+.apenas {
+    color: black;
+    font-size: 0.6em;
+    font-weight: lighter;
+}
