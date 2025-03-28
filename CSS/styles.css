@@ -36,7 +36,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 4vh;
-    overflow: visible;
 }
 
 .images {
@@ -62,12 +61,12 @@ main {
     text-align: center;
     color: #2B5C27;
     font-weight: bold;
-    font-size: 1.5em; /* inherits responsive size from parent */
+    font-size: 1.5em; 
     position: absolute;
     bottom: 13%;
-    left: 15%; /* center horizontally */
-    transform: translateX(-15%); /* accurately center the text horizontally */
-    white-space: nowrap; /* prevent breaking into multiple lines */
+    left: 15%; 
+    transform: translateX(-15%);
+    white-space: nowrap; 
 }
 
 .extreme-overlay {
@@ -79,4 +78,37 @@ main {
     color: black;
     font-size: 0.6em;
     font-weight: lighter;
+}
+
+.wpp-small , .wpp-small img{
+    width: 4rem;
+    height: 4rem;
+    position: sticky;
+    bottom: 0%;
+    left: 100%;
+}
+
+.buy-btn {
+    background: greenyellow;
+    text-align: center;
+    padding: 1.5rem;
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+footer {
+    background: #222;
+    width: 100vw;
+    max-width: 800px;
+    margin-bottom: -1.2rem;
+    padding: 1rem;
 }
